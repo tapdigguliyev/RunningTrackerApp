@@ -13,6 +13,7 @@
     <string name="cancel_tracking_dialog_neg_button">No</string>
     <string name="notification_action_text_pause">Pause</string>
     <string name="notification_action_text_resume">Resume</string>
+    <string name="run_saved_successfully">Run saved successfully!</string>
     <string-array name="filter_options">
         <item>Date</item>
         <item>Running Time</item>
