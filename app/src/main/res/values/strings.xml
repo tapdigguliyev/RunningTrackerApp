@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">RunningApp</string>
-    <string name="google_maps_key">AIzaSyD-ua185spKAU8CV_9ZqnmVhnaoRFSj1l4</string>
+    <string name="app_name">Running Tracker</string>
     <string name="your_runs">Your Runs</string>
     <string name="statistics">Statistics</string>
     <string name="settings">Settings</string>

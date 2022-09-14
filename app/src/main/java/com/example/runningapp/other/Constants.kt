@@ -1,8 +1,11 @@
 package com.example.runningapp.other
 
 import android.graphics.Color
+import com.example.runningapp.BuildConfig
 
 object Constants {
+//    const val API_KEY = BuildConfig.API_KEY
+
     const val RUNNING_DATABASE_NAME = "running_db"
 
     const val REQUEST_CODE_LOCATION_PERMISSION = 0
