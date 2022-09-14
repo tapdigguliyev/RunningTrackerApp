@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         binding.bottomNavigationView.setupWithNavController(navController)
+        binding.bottomNavigationView.setOnItemReselectedListener { /* NO-OP */ }
 
         navHostFragment.findNavController()
             .addOnDestinationChangedListener{_, destination, _ ->
