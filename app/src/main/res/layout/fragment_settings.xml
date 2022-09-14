@@ -8,7 +8,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilName"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/edit_text_field_width"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tilWeight"
@@ -21,13 +21,13 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="Your Name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName|textCapSentences" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilWeight"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/edit_text_field_width"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
