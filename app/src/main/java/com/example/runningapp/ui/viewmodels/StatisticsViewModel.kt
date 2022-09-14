@@ -15,5 +15,5 @@ class StatisticsViewModel @Inject constructor(
     val totalCaloriesBurned = mainRepository.getTotalCaloriesBurned()
     val totalAvgSpeed = mainRepository.getTotalAvgSpeed()
 
-    val runSortedByDate = mainRepository.getAllRunsOrderedByDate()
+    val runsSortedByDate = mainRepository.getAllRunsOrderedByDate()
 }
