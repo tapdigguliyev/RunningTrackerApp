@@ -91,15 +91,16 @@ class StatisticsFragment : Fragment() {
             }
         }
 
-        viewModel.runsSortedByDate.observe(viewLifecycleOwner) {
-            it?.let {
+        viewModel.runsSortedByDate.observe(viewLifecycleOwner) { runs ->
+            val runsReversed = runs?.reversed()
+            runsReversed?.let {
                 val allAvgSpeeds = it.indices.map { i -> BarEntry(i.toFloat(), it[i].avgSpeedInKMH) }
                 val barDataSet = BarDataSet(allAvgSpeeds, "Avg Speed Over Time").apply {
                     valueTextColor = Color.WHITE
                     color = ContextCompat.getColor(requireContext(), R.color.colorAccent)
                 }
                 binding.barChart.data = BarData(barDataSet)
-                binding.barChart.marker = CustomMarkerView(it.reversed(), requireContext(), R.layout.marker_view)
+                binding.barChart.marker = CustomMarkerView(it, requireContext(), R.layout.marker_view)
                 binding.barChart.invalidate()
             }
         }
