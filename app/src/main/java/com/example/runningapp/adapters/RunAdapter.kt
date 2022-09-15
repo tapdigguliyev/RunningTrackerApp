@@ -29,7 +29,7 @@ class RunAdapter : RecyclerView.Adapter<RunAdapter.RunViewHolder>() {
 
     private val differ = AsyncListDiffer(this, diffCallback)
 
-    fun submitList(list: List<Run>) = differ.submitList(list)
+    fun submitList(list: MutableList<Run>) = differ.submitList(list)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RunViewHolder {
         return RunViewHolder(ItemRunBinding.inflate(LayoutInflater.from(parent.context), parent, false))
